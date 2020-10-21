@@ -238,7 +238,7 @@ header{
     box-sizing: border-box;
 
 
-    div{
+    .contenedor{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -326,6 +326,12 @@ header{
 
     .contenedorIconos{
 
+        .contenedor-img{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+
         .individual{
             margin-top: 36px;
         }
@@ -345,6 +351,7 @@ header{
             text-align: center;
             font-weight: 600;
         }
+    }
 
     }
     

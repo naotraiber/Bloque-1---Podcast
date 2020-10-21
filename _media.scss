@@ -119,47 +119,170 @@
 }
 
 
-
+//de donde venimos (celu+texto)
 
 @media screen and (min-width: 768px){
 
-    .dedonde{
+    .deDonde{
         width: 100vw;
-        
+        position: relative;
+
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+                .img{
+                    width: 457.6px;
+                }
+
+
+                .contenedor-textos{
+                    display: flex;
+                    flex-direction: column;
+
+                .titulacion{
+                    @include titulacion;
+                }
+
+                .texto{
+                    font-family: $fuenteSec;
+                    font-size: 16px;
+                    color: $typo;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
+
+//invitados (fotos row)
+
+@media screen and (min-width: 768px){
+
+    .invitados{
+        position: relative;
+    
         div{
             display: flex;
             flex-direction: column;
-
-
-            .img{
-                width: 457.6px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+    
+            .titulacion{
+                @include titulacion;
+                align-self: flex-start;
+                min-width: 400px;
             }
+
+            .imagenes{
+                display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            img{
+                height: 364px;
+                width: 480px;
+            }
+        }
         }
     }
 
 }
 
 
+//algunos de nuestros temas
 
-//invitados
+@media screen and (min-width: 768px){
+    .temas{
+        display: flex;
+        flex-direction: row;
+
+        .titulacion{
+            @include titulacion;
+        }
+        .contenedorIconos{
+            display: flex;
+            flex-direction: row;
+
+            .individual{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .contenedor-img{
+                    width: 260px;
+                    height: 130px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                img{
+
+                    width: 104px;
+                    height: 104px;
+
+                }
+           
+                p{
+                    font-family: $fuentePpal;
+                    font-size: 24px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+                }
+            }
+        }
+    }
+}
+
+
+//footer
 
 @media screen and (min-width: 768px){
 
-    .invitados{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    
-        div{
-    
-            .titulacion{
-                @include titulacion;
+    footer{
+        position: relative;
+        height: 95px;
+
+        .main{
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .texto{
+                font-family: $fuenteSec;
+                font-size: 16px;
+                color: $typo;
+                margin: 0;
             }
-    
-            img{
-                height: 364px;
-                width: 380px;
+
+            .iconosRedes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    padding-left: 36px;
+                }
             }
         }
     }
