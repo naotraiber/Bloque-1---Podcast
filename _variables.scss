@@ -1,0 +1,67 @@
+/*
+En _variables.scss: 
+
+- paletas cromaticas (plenos y gradientes)
+- tipografia: primaria y secundaria
+
+- mixin: botones 
+
+- hover navbar:
+.tachar li
+.menu desplegable
+*/
+
+/*________________________________________________________________*/
+
+
+/*Croma*/
+$verde: #00F3BB;
+$azul: #0000A3;
+$azul-menu: #0000EC;
+$gradiente: linear-gradient(#0000FF, #0000A3);
+$gradienteBotones: linear-gradient(to right,#00F0B8,#0000FE);
+$typo: #060A24;
+
+
+
+/*TIPOGRAFIA
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Mono', sans-serif;
+*/
+
+/*Tipografia*/
+$fuentePpal: 'IBM Plex Sans';
+$fuenteSec: 'IBM Plex Mono';
+
+
+/*________________________________________________________________*/
+
+
+/*Hover li navbar*/
+@mixin liNavbar {
+    .links :hover{
+            li{
+                text-decoration: line-through;
+                color: $verde;
+        }
+    }
+}
+
+
+/*Botones - propiedades*/
+
+@mixin boton {
+        width: 288px;
+        height: 48px;
+        background-color: $verde;
+        border: none;
+        font-family: $fuenteSec;
+        font-weight: 500;
+        margin: 36px 0px 24px 0px;
+    
+        &:hover{
+            background-image: $gradienteBotones;
+            color: white;
+        }
+    }
+

@@ -1,0 +1,167 @@
+@mixin titulacion {
+    font-family: $fuentePpal;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+
+@media screen and (min-width: 768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*Bloque 1*/
+/*Logo + navbar*/
+
+@media screen and (min-width: 768px){
+
+        .barra{
+            height: 80px;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        .navegacion{
+
+        .logo{
+            position: relative;
+            margin-top: 22px;
+            margin-left: 100px;
+            width: 36px;
+            height: 36px;
+        }
+
+        .menu{
+            display: none;
+
+        }
+        }
+    }
+    }
+
+
+/*Bloque 2*/
+/*Hello World*/
+
+@media screen and (min-width: 768px){
+
+    header{
+        width: 100vw;
+
+        div{
+            position: relative;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 120px;
+
+            .titulacion{
+                width: 100vw;
+                font-size: 64px;
+                color: black;
+            }
+
+            .textoMain{
+                max-width: 628px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .boton{
+                width: 226px;
+                height: 56px;
+            }
+        }
+    }
+
+}
+
+
+/*Bloque 3*/
+/*Escuchar los episodios*/
+
+@media screen and (min-width: 768px){
+
+    .play{
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: row !important;
+    }
+        .elementos{
+            display: flex;
+            flex-direction: row;
+
+
+            .titulacion{
+                @include titulacion;
+                color: white;
+            }
+
+            .spotify{
+                width: 100vw;
+                display: flex;
+                justify-content: space-evenly;
+
+                iframe{
+                    width: 400px !important;
+                }
+            }
+        }
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+    .dedonde{
+        width: 100vw;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+
+
+            .img{
+                width: 457.6px;
+            }
+        }
+    }
+
+}
+
+
+
+//invitados
+
+@media screen and (min-width: 768px){
+
+    .invitados{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        div{
+    
+            .titulacion{
+                @include titulacion;
+            }
+    
+            img{
+                height: 364px;
+                width: 380px;
+            }
+        }
+    }
+
+}

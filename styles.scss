@@ -1,0 +1,417 @@
+/* typo + croma + media query */
+
+@import 'variables';
+@import 'media';
+@import 'media2';
+
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+     max-width: 100vw;
+}
+
+/*Bloque 1*/
+/*Logo + navbar*/
+
+.barra{
+    width: 320px;
+    height: 44px;
+
+    .navegacion{
+
+    box-sizing: border-box;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+
+
+        .logo{
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+        }
+
+        .menu{
+            width: 18px;
+            height: 12px;
+            margin-right: 19px;
+
+
+            ul{
+                position: absolute;
+                background-color: $azul-menu;
+                    width: 320px;
+                    height: 224px;
+                    right: 0;
+
+                    li{
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 16px;
+                        color: white;
+                        list-style: none;
+                        margin-top: 24px;
+                        text-align: right;
+
+                        }
+    
+                        li:hover{
+                            color: $verde;
+                            text-decoration: line-through;
+                        }
+    
+            }
+
+
+                .abierto{
+                    display: block;
+                }
+
+                .cerrado{
+                    display: none;
+                }
+
+                input:checked ~ .abierto{
+                    display: none;
+                }
+
+                input:checked ~ .cerrado{
+                    display: block;
+                }
+
+                input:checked ~ ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: right;
+                    align-content: center;
+        
+                }
+        
+
+        }
+        .links{
+            display: none;
+    }
+}
+}
+/*
+
+ul{
+    display: inline-block;
+    padding-left: 24px;
+    background-color: $azul-menu;
+    width: 320px;
+    height: 224px;
+
+    li{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    list-style: none;
+    margin-top: 24px;
+    }
+}
+*/
+
+
+
+        /*
+            .links{
+                list-style: none;
+                /*font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 16px;
+                color: $typo;
+            }
+                .elemento{
+                    display: inline;
+                    font-family: $fuenteSec;
+                }
+
+        */
+        
+
+
+/*Bloque 2*/
+/*Hello World*/
+
+header{
+
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+        .titulacion{
+            font-family: $fuentePpal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            color: $typo;
+            width: 288px;
+        }
+
+        .tachado{
+            text-decoration: line-through;
+            color: $typo;
+            }
+
+        .puntoColor{
+            color: $azul;
+        }    
+
+        .textoMain{
+            font-family: $fuenteSec;
+            font-size: 14px;
+            max-width: 288px;
+            text-align: justify;
+            line-height: 22px;
+            margin-top: 16px;
+            color: $typo;
+        }
+        
+        .boton{
+           @include boton;
+        }
+    
+}
+
+/*Bloque 3*/
+/*Episodios*/
+
+.play{
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 24px;
+    background-image: $gradiente;
+    height: 1203.5px;
+    transform: skew(0deg, -8deg);
+    width: 100%;
+
+    .elementos{
+        transform: skew(0deg, 8deg);
+
+        .titulacion{
+            margin: 0px 16px;
+            position: relative;
+           font-family: $fuentePpal;
+           font-weight: 400;
+            color: white;
+            font-size: 36px;
+        }
+
+        .spotify{
+            margin-top: 21px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            iframe{
+                margin-bottom: 11px;
+                width: 288px;
+            }
+        }
+    }
+    
+}
+
+/*Bloque 4*/
+/*De donde venimos (Celular + texto*/
+
+.deDonde{
+
+    position: relative;
+    margin-top: -48px;
+    box-sizing: border-box;
+
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .img{
+            width: 360px;
+            margin-bottom: 48px;
+        }
+
+        .titulacion{
+            font-family: $fuentePpal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            color: $typo;
+            width: 288px;
+            margin-top: 10px;
+        }
+
+        .texto{
+
+            font-family: $fuenteSec;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: justify;
+            color: $typo;
+            margin-top: 8px;
+            width: 288px;
+        }
+    }
+}
+
+/*Bloque 5*/
+/*Invitadas estelares*/
+
+.invitados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div{
+
+        .titulacion{
+            margin-left: 16px;
+            margin-top: 54px;
+            margin-bottom: 14px;
+            font-family: $fuentePpal;
+            font-weight: 400;
+            color: $typo;
+            font-size: 36px;
+            line-height: 42px;
+            width: 288px;
+            
+        }
+
+        img{
+            height: 243px;
+            width: 320px;
+        }
+    }
+}
+
+/*Bloque 6*/
+/* Nuestros temas (icono + texto) */
+
+.temas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    .titulacion{
+            font-family: $fuentePpal;
+            font-weight: 400;
+            color: $typo;
+            font-size: 36px;
+            line-height: 42px;
+            margin-top: 27px;
+            margin-left: 16px;
+    }
+
+    .contenedorIconos{
+
+        .individual{
+            margin-top: 36px;
+        }
+
+
+        img{
+            width: 104px;
+            height: 104px;
+            margin-bottom: 13px;
+        }
+
+        p{
+            font-family: $fuentePpal;
+            color: $typo;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+    }
+    
+}
+
+/*Bloque 7*/
+/*Novedades + boton*/
+
+.novedades{
+    box-sizing: border-box;
+    background-image: $gradiente;
+    position: relative;
+    height: 341px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .main{
+
+        
+        .titulacion{
+            font-family: $fuentePpal;
+            font-weight: 400;
+            color: white;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .boton{
+            @include boton;
+         }
+    }
+    
+
+}
+
+/*Bloque 8*/
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .texto{
+        font-family: $fuenteSec;
+        color: $typo;
+        margin-top: 24px;
+    }
+    .iconosRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 31px;
+
+        a{
+        img{
+        height: 16px;
+        width: 16px;
+        }
+        }
+}
+
+}

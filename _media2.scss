@@ -1,0 +1,33 @@
+/*Bloque 3*/
+/*Escuchar los episodios*/
+
+@media screen and (min-width: 1200px){
+
+    .play{
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: row !important;
+    }
+        .elementos{
+            display: flex;
+            flex-direction: row;
+
+
+            .titulacion{
+                @include titulacion;
+                color: white;
+            }
+
+            .spotify{
+                width: 100vw;
+                display: flex;
+                justify-content: space-evenly;
+
+                iframe{
+                    width: 584px !important;
+                }
+            }
+        }
+
+}
