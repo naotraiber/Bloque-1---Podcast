@@ -19,7 +19,7 @@ $verde: #00F3BB;
 $azul: #0000A3;
 $azul-menu: #0000EC;
 $gradiente: linear-gradient(#0000FF, #0000A3);
-$gradienteBotones: linear-gradient(to right,#00F0B8,#0000FE);
+$gradienteBotones: linear-gradient(to left,#00F0B8,#0000FE);
 $typo: #060A24;
 
 
@@ -65,3 +65,43 @@ $fuenteSec: 'IBM Plex Mono';
         }
     }
 
+@mixin botonHeader{
+        width: 226px;
+        height: 56px;
+        background-color: $verde;
+        border: none;
+        font-family: $fuenteSec;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 36px 0px 24px 0px;
+
+        &:hover{
+            background-image: $gradienteBotones;
+            color: white;
+        }
+}
+
+@mixin botonNovedades{
+    width: 345px;
+    height: 56px;
+    background-color: $verde;
+    border: none;
+    font-family: $fuenteSec;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 36px 0px 24px 0px;
+
+    &:hover{
+        background-image: $gradienteBotones;
+        color: white;
+    }
+}
+
+
+
+
+@mixin titulacion {
+    font-family: $fuentePpal;
+    font-size: 48px;
+    line-height: 62px;
+}
