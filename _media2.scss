@@ -2,7 +2,7 @@
     /*Escuchar los episodios*/
 
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
         .helloWorld{
             display: flex;
             flex-direction: column;
@@ -10,7 +10,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
 
             .play {
 
@@ -42,7 +42,7 @@
 
 // Algunos de nuestros temas
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
 
         .temas {
             box-sizing: border-box;

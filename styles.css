@@ -51,13 +51,7 @@ header {
     header nav ul {
       top: 2.75rem;
       background-color: #0000EC;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      display: none;
       width: 20rem;
       height: 14rem;
       z-index: 1;
@@ -80,15 +74,15 @@ header {
       header nav .menu-nav input {
         display: none; }
       header nav .menu-nav .abierto {
-        display: none; }
-      header nav .menu-nav .cerrado {
         display: block; }
-      header nav .menu-nav input:checked ~ ul {
+      header nav .menu-nav .cerrado {
         display: none; }
       header nav .menu-nav input:checked ~ .abierto {
-        display: block; }
-      header nav .menu-nav input:checked ~ .cerrado {
         display: none; }
+      header nav .menu-nav input:checked ~ .cerrado {
+        display: block; }
+      header nav .menu-nav input:checked ~ ul {
+        display: block; }
   header .helloWorld {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -228,10 +222,10 @@ header {
     .deDonde .contenedor .texto {
       font-family: "IBM Plex Mono";
       font-size: 0.8em;
-      line-height: 1.3em;
+      line-height: 22px;
       text-align: justify;
       color: #060A24;
-      margin: 8px 16px 0px 16px;
+      margin: 1em 1em 0px 1em;
       max-width: 18rem; }
 
 /*Bloque 5*/
@@ -429,12 +423,47 @@ footer {
 /*Logo + navbar*/
 @media screen and (min-width: 768px) {
   header {
-    /*Bloque 2
-    Hello World*/ }
+   /*         
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100vw;
+                height: 80px;
+                margin-right: 5vw;
+
+                li{
+                    a{
+                        color: $typo;
+                    }
+                }
+
+            }
+
+
+
+
+
+
+
+
+            .logo{
+                width: 2.25rem;
+                height: 2.25rem;
+                margin-left: 6.25rem;
+            }
+
+            .menu-box{
+                display: none;
+            }
+        
+
+        }
+
+/*Bloque 2
+Hello World*/ }
     header nav {
-      width: 100vw;
-      height: 5rem;
-      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -447,15 +476,19 @@ footer {
               justify-content: space-between;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      height: 80px; }
       header nav .logo {
         width: 2.25rem;
         height: 2.25rem;
-        margin-left: 6.25rem; }
-      header nav .menu-box {
+        margin-left: 6.25rem;
+        margin-top: 28px;
+        z-index: 3; }
+      header nav .menu-nav input {
         display: none; }
-      header nav ul {
-        position: absolute;
+      header nav .menu-nav .menu-box {
+        display: none; }
+      header nav .menu-nav ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -463,12 +496,24 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        width: 100vw; }
-        header nav ul li a {
-          color: #060A24; }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 6rem;
+        width: unset;
+        height: unset;
+        background-color: white; }
+        header nav .menu-nav ul li {
+          list-style: none;
+          padding-left: 3em;
+          margin-top: 0; }
+          header nav .menu-nav ul li a {
+            color: #060A24;
+            font-family: "IBM Plex Sans";
+            text-decoration: none; }
+            header nav .menu-nav ul li a:hover {
+              color: #00F3BB;
+              text-decoration: line-through; }
     header .helloWorld {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -782,7 +827,7 @@ footer {
           padding-left: 36px; } }
 /*Bloque 3*/
 /*Escuchar los episodios*/
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .helloWorld {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -792,7 +837,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100vw; } }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .play {
     width: 100vw; }
     .play .elements h2 {
@@ -813,7 +858,7 @@ footer {
         width: 400px;
         -ms-flex-item-align: center;
             align-self: center; } }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .temas {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
