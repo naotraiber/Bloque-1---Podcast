@@ -15,29 +15,44 @@
     header {
 
         nav {
-            .menu-nav{
+            width: 100vw;
+            height: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .logo{
+                width: 36px;
+                height: 36px;
+                margin-left: 100px;
+            }
+
+            .menu-box{
                 display: none;
             }
 
-            ul{
-                position: static;
-                display: inline-block;
-                height: 10vh;                   
-                width: unset;
-                margin-right: 1em;
 
+            ul{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 100vw;
+ 
                 li{
-                    box-sizing: border-box;
-                    display: inline-block; 
-                    height: 10vh;
-                    padding: 0 0.5em;
-                    width: unset;
-                    line-height: 10vh;
-                    list-style: none;
-                    border-bottom: 0px ;
-                    color: blue;
+
+
+                    a{
+                        color: $typo;
+                    }
                 }
+
             }
+
+        
 
         }
         

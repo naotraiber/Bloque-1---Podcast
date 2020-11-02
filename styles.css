@@ -31,33 +31,84 @@ body {
 /*Bloque 1*/
 /*Logo + navbar*/
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px; }
   header nav .logo {
     position: relative;
     width: 24px;
     height: 24px;
     margin-left: 16px; }
-  header nav .menu-nav input {
-    display: none; }
-  header nav .menu-nav .abierto {
-    display: block; }
-  header nav .menu-nav .cerrado {
-    display: none; }
-  header nav .menu-nav input:checked ~ .abierto {
-    display: none; }
-  header nav .menu-nav input:checked ~ .cerrado {
-    display: block; }
+  header nav ul {
+    top: 44px;
+    background-color: #0000EC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+    height: 224px;
+    z-index: 1;
+    right: 0;
+    position: absolute; }
+    header nav ul li {
+      margin-top: 27px;
+      margin-left: 15px;
+      font-family: "IBM Plex Sans";
+      font-size: 16px;
+      list-style: none; }
+      header nav ul li a {
+        color: white;
+        text-decoration: none; }
+        header nav ul li a:hover {
+          color: #00F3BB;
+          text-decoration: line-through; }
+  header nav .menu-nav {
+    margin-right: 20px; }
+    header nav .menu-nav input {
+      display: none; }
+    header nav .menu-nav .abierto {
+      display: none; }
+    header nav .menu-nav .cerrado {
+      display: block; }
+    header nav .menu-nav input:checked ~ ul {
+      display: none; }
+    header nav .menu-nav input:checked ~ .abierto {
+      display: block; }
+    header nav .menu-nav input:checked ~ .cerrado {
+      display: none; }
 header .helloWorld {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100vw;
   position: relative;
   margin-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   header .helloWorld h1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "IBM Plex Sans";
     font-weight: 400;
     font-size: 36px;
@@ -86,25 +137,38 @@ header .helloWorld {
     font-weight: 500;
     margin: 36px 0px 24px 0px; }
     header .helloWorld .boton:hover {
+      background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
       background-image: linear-gradient(to left, #00F0B8, #0000FE);
       color: white; }
 
 /*Bloque 3*/
 /*Episodios*/
 .play {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100vw;
   box-sizing: border-box;
   position: relative;
   margin-top: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
   height: 1290.5px;
-  clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); }
+  -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+          clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); }
   .play .elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .play .elements h2 {
       width: 100vw;
       margin: 4rem 0px 20px 16px;
@@ -129,15 +193,25 @@ header .helloWorld {
 /*Bloque 4*/
 /*De donde venimos (Celular + texto*/
 .deDonde {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   margin-top: -120px;
   box-sizing: border-box; }
   .deDonde .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .deDonde .contenedor .img {
       width: 360px;
       margin-bottom: 27px; }
@@ -161,11 +235,21 @@ header .helloWorld {
 /*Bloque 5*/
 /*Invitadas estelares*/
 .invitados {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .invitados div h2 {
     margin: 54px 0px 16px 16px;
     font-family: "IBM Plex Sans";
@@ -175,10 +259,19 @@ header .helloWorld {
     color: #060A24;
     width: 288px; }
   .invitados div .imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .invitados div .imagenes img {
       height: 243px;
       width: 320px;
@@ -187,11 +280,21 @@ header .helloWorld {
 /*Bloque 6*/
 /* Nuestros temas (icono + texto) */
 .temas {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative; }
   .temas h2 {
     font-family: "IBM Plex Sans";
@@ -202,9 +305,16 @@ header .helloWorld {
     margin: 27px 0px 37px 16px;
     max-width: 288px; }
   .temas .contenedorIconos .contenedor-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     align-items: center;
     margin: 20px 0px 65px 0px; }
     .temas .contenedorIconos .contenedor-img img {
@@ -222,17 +332,30 @@ header .helloWorld {
 /*Bloque 7*/
 /*Novedades + boton*/
 .novedades {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
   position: relative;
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%); }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%); }
   .novedades .main {
-    clip-path: none; }
+    -webkit-clip-path: none;
+            clip-path: none; }
     .novedades .main h2 {
       max-width: 288px;
       font-family: "IBM Plex Sans";
@@ -250,27 +373,46 @@ header .helloWorld {
       font-weight: 500;
       margin: 36px 0px 24px 0px; }
       .novedades .main .boton:hover {
+        background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
         background-image: linear-gradient(to left, #00F0B8, #0000FE);
         color: white; }
 
 /*Bloque 8*/
 /*Footer*/
 footer {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 121px; }
   footer .texto {
     font-family: "IBM Plex Mono";
     color: #060A24;
     margin-top: 24px; }
   footer .iconosRedes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 16px;
     margin-bottom: 31px; }
     footer .iconosRedes a img {
@@ -287,29 +429,55 @@ footer {
   header {
     /*Bloque 2
     Hello World*/ }
-    header nav .menu-nav {
-      display: none; }
-    header nav ul {
-      position: static;
-      display: inline-block;
-      height: 10vh;
-      width: unset;
-      margin-right: 1em; }
-      header nav ul li {
-        box-sizing: border-box;
-        display: inline-block;
-        height: 10vh;
-        padding: 0 0.5em;
-        width: unset;
-        line-height: 10vh;
-        list-style: none;
-        border-bottom: 0px;
-        color: blue; }
-    header .helloWorld {
-      box-sizing: border-box;
-      margin: 120px 0px 0px 100px;
+    header nav {
+      width: 100vw;
+      height: 80px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header nav .logo {
+        width: 36px;
+        height: 36px;
+        margin-left: 100px; }
+      header nav .menu-box {
+        display: none; }
+      header nav ul {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 100vw; }
+        header nav ul li a {
+          color: #060A24; }
+    header .helloWorld {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 120px 0px 0px 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       justify-self: flex-start; }
       header .helloWorld h1 {
         width: 100vw;
@@ -317,7 +485,8 @@ footer {
         color: black;
         margin: 0px 0px 10px 0px; }
       header .helloWorld .textoMain {
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         min-width: 624px;
         font-size: 16px;
         line-height: 24px;
@@ -331,9 +500,11 @@ footer {
         font-weight: 500;
         font-size: 18px;
         margin: 36px 0px 24px 0px;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         margin-top: 56px; }
         header .helloWorld .boton:hover {
+          background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
           background-image: linear-gradient(to left, #00F0B8, #0000FE);
           color: white; }
 
@@ -342,9 +513,11 @@ footer {
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .play {
     width: 100vw;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     max-height: 1042.6px; }
     .play .elements {
       width: 100vw; }
@@ -363,25 +536,45 @@ footer {
         grid-template-columns: repeat(2, 585px);
         grid-template-rows: repeat(2, 232px);
         grid-gap: 72px;
-        justify-content: center;
-        align-items: center; } }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .deDonde {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative; }
     .deDonde .contenedor {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       width: 100vw; }
       .deDonde .contenedor .img {
         width: 457.6px;
         margin-right: 62.4px; }
       .deDonde .contenedor .contenedor-textos {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 100vw; }
         .deDonde .contenedor .contenedor-textos h2 {
           font-family: "IBM Plex Sans";
@@ -402,14 +595,24 @@ footer {
           margin: 0; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .invitados {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
     margin-top: 64px; }
     .invitados div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: relative; }
       .invitados div h2 {
         font-family: "IBM Plex Sans";
@@ -419,19 +622,35 @@ footer {
         width: 100vw;
         margin: 0px 0px 36px 200px; }
       .invitados div .imagenes {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .invitados div .imagenes img {
           height: 364px;
           width: 480px; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .temas {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 64px 0px 20px 0px; }
     .temas h2 {
       justify-self: self-start;
@@ -442,14 +661,26 @@ footer {
       margin: 0px 0px 40px 200px;
       min-width: 100vw; }
     .temas .contenedorIconos {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
       .temas .contenedorIconos .contenedor-img {
         width: 260px;
         height: 130px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .temas .contenedorIconos .contenedor-img img {
           width: 104px;
           height: 104px;
@@ -462,17 +693,28 @@ footer {
           text-align: center; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .novedades {
-    box-sizing: border-box;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
     height: 518px;
     margin-top: 50px; }
     .novedades .main {
       background-color: rgba(66, 70, 99, 0);
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-top: 20px; }
       .novedades .main h2 {
         margin: 0px;
@@ -492,6 +734,7 @@ footer {
         font-size: 18px;
         margin: 36px 0px 24px 0px; }
         .novedades .main .boton:hover {
+          background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
           background-image: linear-gradient(to left, #00F0B8, #0000FE);
           color: white; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
@@ -500,20 +743,37 @@ footer {
     height: 95px; }
     footer .main {
       width: 100vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       footer .main .texto {
         font-family: "IBM Plex Mono";
         font-size: 16px;
         color: #060A24;
         margin: 0; }
       footer .main .iconosRedes {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         footer .main .iconosRedes img {
           width: 20px;
           height: 20px;
@@ -534,17 +794,30 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-gap: none;
-      align-items: center; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .play .elements .spotify iframe {
         width: 400px;
-        align-self: center; } }
+        -ms-flex-item-align: center;
+            align-self: center; } }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .temas {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .temas .contenedorIconos {
       display: grid;
       grid-template-columns: repeat(2, 2fr);

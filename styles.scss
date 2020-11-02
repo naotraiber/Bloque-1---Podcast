@@ -20,6 +20,9 @@
         nav {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            height: 44px;
+
                     .logo {
                         position: relative;
                         width: 24px;
@@ -27,25 +30,63 @@
                         margin-left: 16px;
                     }
 
+                    ul{
+                        top: 44px;
+                        background-color: $azul-menu;
+                        display: flex;
+                        flex-direction: column;
+                        width: 320px;
+                        height: 224px;
+                        z-index: 1;
+                        right: 0;
+                        position: absolute;
+
+                        li{
+                            margin-top: 27px;
+                            margin-left: 15px;
+                            font-family: $fuentePpal;
+                            font-size: 16px;
+                            list-style: none;
+
+                            a{
+                                color: white;
+                                text-decoration: none;
+
+                                &:hover{
+                                    color: $verde;
+                                    text-decoration: line-through;
+                                }
+                            }
+
+                        }
+                    }
+
                     .menu-nav {
+
+                        margin-right: 20px;
 
                         input{
                             display: none;
                         }
 
                         .abierto{
+                            display: none;
+                        }
+
+                        .cerrado{
                             display: block;
                         }
-                        .cerrado{
+
+                        input:checked ~ ul{
                             display: none;
                         }
 
                         input:checked ~ .abierto{
-                            display: none;
+                            display: block;
                         }
 
                         input:checked ~ .cerrado{
-                            display: block;
+                            display: none;
                         }
 
                     }
@@ -63,6 +104,7 @@
             align-items: center;
 
             h1 {
+                box-sizing: border-box;
                 font-family: $fuentePpal;
                 font-weight: 400;
                 font-size: 36px;
