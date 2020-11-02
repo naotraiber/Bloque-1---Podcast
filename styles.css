@@ -833,6 +833,9 @@ Hello World*/ }
 /*Bloque 3*/
 /*Escuchar los episodios*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  ul li {
+    margin-left: 1em; }
+
   .helloWorld {
     display: -webkit-box;
     display: -ms-flexbox;
