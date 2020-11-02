@@ -299,7 +299,7 @@ header {
     font-weight: 400;
     color: #060A24;
     margin: 27px 0px 37px 16px;
-    max-width: 288px; }
+    width: 288px; }
   .temas .contenedorIconos .contenedor-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,6 +569,7 @@ Hello World*/ }
     .play .elements {
       width: 100vw; }
       .play .elements h2 {
+        width: 100vw;
         font-family: "IBM Plex Sans";
         font-size: 48px;
         line-height: 62px;
@@ -593,7 +594,8 @@ Hello World*/ }
   .deDonde {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    position: relative; }
+    position: relative;
+    width: 100vw; }
     .deDonde .contenedor {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -612,7 +614,7 @@ Hello World*/ }
           flex-wrap: wrap;
       width: 100vw; }
       .deDonde .contenedor .img {
-        width: 28.6rem;
+        width: 457.6px;
         margin-right: 3.9rem; }
       .deDonde .contenedor .contenedor-textos {
         display: -webkit-box;
@@ -647,6 +649,7 @@ Hello World*/ }
     position: relative;
     margin-top: 4rem; }
     .invitados div {
+      width: 100vw;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -698,15 +701,15 @@ Hello World*/ }
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 64px 0px 20px 0px; }
+    margin: 64px 0px 30px 0px; }
     .temas h2 {
-      justify-self: self-start;
       font-family: "IBM Plex Sans";
       font-size: 48px;
       line-height: 62px;
       font-weight: 300;
-      margin: 0px 0px 40px 200px;
-      min-width: 100vw; }
+      width: 100vw;
+      margin: 0px 0px 36px 200px;
+      justify-self: flex-start; }
     .temas .contenedorIconos {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -737,7 +740,9 @@ Hello World*/ }
           font-size: 1.5em;
           color: #060A24;
           letter-spacing: 0;
-          text-align: center; } }
+          line-height: 1.3em;
+          text-align: center;
+          max-width: 8em; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .novedades {
     -webkit-box-sizing: border-box;
@@ -850,7 +855,6 @@ Hello World*/ }
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: none;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
@@ -858,6 +862,12 @@ Hello World*/ }
         width: 400px;
         -ms-flex-item-align: center;
             align-self: center; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .deDonde {
+    width: 100vw; }
+    .deDonde .contenedor .img {
+      width: 420px;
+      margin-right: 0; } }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .temas {
     -webkit-box-sizing: border-box;

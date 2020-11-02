@@ -28,7 +28,6 @@
                         display: grid;
                         grid-template-columns: repeat(2,1fr);
                         grid-template-rows: repeat(2,1fr);
-                        grid-gap: none;
                         align-items: center;
                         
                         iframe{
@@ -39,6 +38,25 @@
                 }
             }
         }
+
+// De donde
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .deDonde{
+            width: 100vw;
+
+            .contenedor{
+
+                .img {
+                    width: 420px;
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
 
 // Algunos de nuestros temas
 
