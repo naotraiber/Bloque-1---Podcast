@@ -30,25 +30,71 @@ body {
 
 /*Bloque 1*/
 /*Logo + navbar*/
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 44px; }
-  header nav .logo {
+header {
+  width: 100%; }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 2.75rem; }
+    header nav .logo {
+      position: relative;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: 1rem; }
+    header nav ul {
+      top: 2.75rem;
+      background-color: #0000EC;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 20rem;
+      height: 14rem;
+      z-index: 1;
+      right: 0;
+      position: absolute; }
+      header nav ul li {
+        margin-top: 1.8rem;
+        margin-left: 1rem;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        list-style: none; }
+        header nav ul li a {
+          color: white;
+          text-decoration: none; }
+          header nav ul li a:hover {
+            color: #00F3BB;
+            text-decoration: line-through; }
+    header nav .menu-nav {
+      margin-right: 1.25rem; }
+      header nav .menu-nav input {
+        display: none; }
+      header nav .menu-nav .abierto {
+        display: none; }
+      header nav .menu-nav .cerrado {
+        display: block; }
+      header nav .menu-nav input:checked ~ ul {
+        display: none; }
+      header nav .menu-nav input:checked ~ .abierto {
+        display: block; }
+      header nav .menu-nav input:checked ~ .cerrado {
+        display: none; }
+  header .helloWorld {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100vw;
     position: relative;
-    width: 24px;
-    height: 24px;
-    margin-left: 16px; }
-  header nav ul {
-    top: 44px;
-    background-color: #0000EC;
+    margin-top: 29px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,90 +102,46 @@ header nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 320px;
-    height: 224px;
-    z-index: 1;
-    right: 0;
-    position: absolute; }
-    header nav ul li {
-      margin-top: 27px;
-      margin-left: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .helloWorld h1 {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       font-family: "IBM Plex Sans";
-      font-size: 16px;
-      list-style: none; }
-      header nav ul li a {
-        color: white;
-        text-decoration: none; }
-        header nav ul li a:hover {
-          color: #00F3BB;
-          text-decoration: line-through; }
-  header nav .menu-nav {
-    margin-right: 20px; }
-    header nav .menu-nav input {
-      display: none; }
-    header nav .menu-nav .abierto {
-      display: none; }
-    header nav .menu-nav .cerrado {
-      display: block; }
-    header nav .menu-nav input:checked ~ ul {
-      display: none; }
-    header nav .menu-nav input:checked ~ .abierto {
-      display: block; }
-    header nav .menu-nav input:checked ~ .cerrado {
-      display: none; }
-header .helloWorld {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100vw;
-  position: relative;
-  margin-top: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  header .helloWorld h1 {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: "IBM Plex Sans";
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    color: #060A24;
-    width: 288px; }
-    header .helloWorld h1 .tachado {
-      text-decoration: line-through;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      color: #060A24;
+      width: 288px; }
+      header .helloWorld h1 .tachado {
+        text-decoration: line-through;
+        color: #060A24; }
+      header .helloWorld h1 .puntoColor {
+        color: #0000A3; }
+    header .helloWorld .textoMain {
+      font-family: "IBM Plex Mono";
+      font-size: 14px;
+      max-width: 288px;
+      text-align: justify;
+      line-height: 22px;
+      margin-top: 16px;
       color: #060A24; }
-    header .helloWorld h1 .puntoColor {
-      color: #0000A3; }
-  header .helloWorld .textoMain {
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    max-width: 288px;
-    text-align: justify;
-    line-height: 22px;
-    margin-top: 16px;
-    color: #060A24; }
-  header .helloWorld .boton {
-    width: 288px;
-    height: 48px;
-    background-color: #00F3BB;
-    border: none;
-    font-family: "IBM Plex Mono";
-    font-weight: 500;
-    margin: 36px 0px 24px 0px; }
-    header .helloWorld .boton:hover {
-      background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
-      background-image: linear-gradient(to left, #00F0B8, #0000FE);
-      color: white; }
+    header .helloWorld .boton {
+      width: 288px;
+      height: 48px;
+      background-color: #00F3BB;
+      border: none;
+      font-family: "IBM Plex Mono";
+      font-weight: 500;
+      margin: 36px 0px 24px 0px; }
+      header .helloWorld .boton:hover {
+        background-image: -webkit-gradient(linear, right top, left top, from(#00F0B8), to(#0000FE));
+        background-image: linear-gradient(to left, #00F0B8, #0000FE);
+        color: white; }
 
 /*Bloque 3*/
 /*Episodios*/
@@ -149,10 +151,10 @@ header .helloWorld {
   width: 100vw;
   box-sizing: border-box;
   position: relative;
-  margin-top: 24px;
+  margin-top: 1.5rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
-  height: 1290.5px;
+  height: 80.6rem;
   -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
           clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); }
   .play .elements {
@@ -171,7 +173,7 @@ header .helloWorld {
             align-items: center; }
     .play .elements h2 {
       width: 100vw;
-      margin: 4rem 0px 20px 16px;
+      margin: 4rem 0px 1.25rem 4rem;
       position: relative;
       color: white;
       font-family: "IBM Plex Sans";
@@ -179,7 +181,7 @@ header .helloWorld {
       line-height: 40px;
       font-weight: 400; }
     .play .elements .spotify {
-      max-width: 298px;
+      max-width: 18.6rem;
       margin: 11px 11px 11px 11px;
       position: relative;
       display: grid;
@@ -213,8 +215,8 @@ header .helloWorld {
         -ms-flex-align: center;
             align-items: center; }
     .deDonde .contenedor .img {
-      width: 360px;
-      margin-bottom: 27px; }
+      width: 22.5rem;
+      margin-bottom: 1.6rem; }
     .deDonde .contenedor h2 {
       font-family: "IBM Plex Sans";
       font-size: 36px;
@@ -222,15 +224,15 @@ header .helloWorld {
       font-weight: 400;
       color: #060A24;
       margin: 0px 0px 8px 16px;
-      max-width: 288px; }
+      max-width: 18rem; }
     .deDonde .contenedor .texto {
       font-family: "IBM Plex Mono";
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 0.8em;
+      line-height: 1.3em;
       text-align: justify;
       color: #060A24;
       margin: 8px 16px 0px 16px;
-      max-width: 288px; }
+      max-width: 18rem; }
 
 /*Bloque 5*/
 /*Invitadas estelares*/
@@ -257,7 +259,7 @@ header .helloWorld {
     line-height: 40px;
     font-weight: 400;
     color: #060A24;
-    width: 288px; }
+    width: 18rem; }
   .invitados div .imagenes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -324,8 +326,8 @@ header .helloWorld {
     .temas .contenedorIconos .contenedor-img p {
       font-family: "IBM Plex Sans";
       color: #060A24;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 1.4em;
+      line-height: 2em;
       text-align: center;
       font-weight: 500; }
 
@@ -337,7 +339,7 @@ header .helloWorld {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
   position: relative;
-  height: 350px;
+  height: 21.87rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,13 +359,13 @@ header .helloWorld {
     -webkit-clip-path: none;
             clip-path: none; }
     .novedades .main h2 {
-      max-width: 288px;
+      max-width: 18rem;
       font-family: "IBM Plex Sans";
       font-weight: 300;
       color: white;
-      font-size: 36px;
+      font-size: 2.25em;
       text-align: center;
-      padding-top: 50px; }
+      padding-top: 3.1rem; }
     .novedades .main .boton {
       width: 288px;
       height: 48px;
@@ -395,11 +397,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 121px; }
+  height: 7.5rem; }
   footer .texto {
     font-family: "IBM Plex Mono";
     color: #060A24;
-    margin-top: 24px; }
+    margin-top: 1.4rem; }
   footer .iconosRedes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -431,7 +433,7 @@ footer {
     Hello World*/ }
     header nav {
       width: 100vw;
-      height: 80px;
+      height: 5rem;
       position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -447,9 +449,9 @@ footer {
           -ms-flex-align: center;
               align-items: center; }
       header nav .logo {
-        width: 36px;
-        height: 36px;
-        margin-left: 100px; }
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-left: 6.25rem; }
       header nav .menu-box {
         display: none; }
       header nav ul {
@@ -481,15 +483,15 @@ footer {
       justify-self: flex-start; }
       header .helloWorld h1 {
         width: 100vw;
-        font-size: 64px;
+        font-size: 3em;
         color: black;
         margin: 0px 0px 10px 0px; }
       header .helloWorld .textoMain {
         -ms-flex-item-align: start;
             align-self: flex-start;
-        min-width: 624px;
-        font-size: 16px;
-        line-height: 24px;
+        min-width: 39rem;
+        font-size: 1em;
+        line-height: 1.5em;
         justify-self: self-start; }
       header .helloWorld .boton {
         width: 226px;
@@ -518,7 +520,7 @@ footer {
     position: relative;
     -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
             clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    max-height: 1042.6px; }
+    max-height: 65rem; }
     .play .elements {
       width: 100vw; }
       .play .elements h2 {
@@ -535,7 +537,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 585px);
         grid-template-rows: repeat(2, 232px);
-        grid-gap: 72px;
+        grid-gap: 4.5rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -565,8 +567,8 @@ footer {
           flex-wrap: wrap;
       width: 100vw; }
       .deDonde .contenedor .img {
-        width: 457.6px;
-        margin-right: 62.4px; }
+        width: 28.6rem;
+        margin-right: 3.9rem; }
       .deDonde .contenedor .contenedor-textos {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -581,24 +583,24 @@ footer {
           font-size: 48px;
           line-height: 62px;
           font-weight: 300;
-          margin-bottom: 24px;
+          margin-bottom: 0.3em;
           max-width: 30rem;
           margin-left: 0; }
         .deDonde .contenedor .contenedor-textos .texto {
           font-family: "IBM Plex Mono";
-          font-size: 16px;
+          font-size: 1em;
           color: #060A24;
           letter-spacing: 0;
-          line-height: 24px;
+          line-height: 1.5em;
           text-align: left;
-          min-width: 464px;
+          min-width: 29rem;
           margin: 0; } }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .invitados {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
-    margin-top: 64px; }
+    margin-top: 4rem; }
     .invitados div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -669,8 +671,8 @@ footer {
           -ms-flex-direction: row;
               flex-direction: row; }
       .temas .contenedorIconos .contenedor-img {
-        width: 260px;
-        height: 130px;
+        width: 16.25rem;
+        height: 8.1rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -687,7 +689,7 @@ footer {
           margin-bottom: 29px; }
         .temas .contenedorIconos .contenedor-img p {
           font-family: "IBM Plex Sans";
-          font-size: 24px;
+          font-size: 1.5em;
           color: #060A24;
           letter-spacing: 0;
           text-align: center; } }
@@ -698,8 +700,8 @@ footer {
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
-    height: 518px;
-    margin-top: 50px; }
+    height: 32.3rem;
+    margin-top: 3.12rem; }
     .novedades .main {
       background-color: rgba(66, 70, 99, 0);
       display: -webkit-box;
@@ -718,7 +720,7 @@ footer {
       margin-top: 20px; }
       .novedades .main h2 {
         margin: 0px;
-        max-width: 692px;
+        max-width: 43.25rem;
         padding: 0px;
         font-family: "IBM Plex Sans";
         font-size: 48px;
@@ -740,7 +742,7 @@ footer {
 @media screen and (min-width: 768px) and (min-width: 768px) {
   footer {
     position: relative;
-    height: 95px; }
+    height: 6rem; }
     footer .main {
       width: 100vw;
       display: -webkit-box;
@@ -757,7 +759,7 @@ footer {
               align-items: center; }
       footer .main .texto {
         font-family: "IBM Plex Mono";
-        font-size: 16px;
+        font-size: 1em;
         color: #060A24;
         margin: 0; }
       footer .main .iconosRedes {
@@ -780,6 +782,16 @@ footer {
           padding-left: 36px; } }
 /*Bloque 3*/
 /*Escuchar los episodios*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .helloWorld {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw; } }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .play {
     width: 100vw; }

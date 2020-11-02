@@ -16,18 +16,17 @@
 
         nav {
             width: 100vw;
-            height: 80px;
+            height: 5rem;
             position: relative;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
 
-
             .logo{
-                width: 36px;
-                height: 36px;
-                margin-left: 100px;
+                width: 2.25rem;
+                height: 2.25rem;
+                margin-left: 6.25rem;
             }
 
             .menu-box{
@@ -69,16 +68,16 @@ Hello World*/
 
             h1 {
                 width: 100vw;
-                font-size: 64px;
+                font-size: 3em;
                 color: black;
                 margin: 0px 0px 10px 0px;
             }
 
             .textoMain {
                 align-self: flex-start;
-                min-width: 624px;
-                font-size: 16px;
-                line-height: 24px;
+                min-width: 39rem;
+                font-size: 1em;
+                line-height: 1.5em;
                 justify-self: self-start;
             }
 
@@ -101,7 +100,7 @@ Hello World*/
             box-sizing: border-box;
             position: relative;
             clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-            max-height: 1042.6px ;
+            max-height: 65rem ;
 
             .elements {
                 width: 100vw;
@@ -119,7 +118,7 @@ Hello World*/
                     display: grid;
                     grid-template-columns: repeat(2, 585px);
                     grid-template-rows: repeat(2, 232px);
-                    grid-gap: 72px;
+                    grid-gap: 4.5rem;
                     justify-content: center;
                     align-items: center;
                 }
@@ -146,8 +145,8 @@ Hello World*/
                 width: 100vw;
 
                 .img {
-                    width: 457.6px;
-                    margin-right: 62.4px;
+                    width: 28.6rem;
+                    margin-right: 3.9rem;
                 }
 
 
@@ -159,7 +158,7 @@ Hello World*/
 
                     h2 {
                         @include titulacionWeb;
-                        margin-bottom: 24px;
+                        margin-bottom: 0.3em;
                         max-width: 30rem;
                         margin-left: 0;
 
@@ -167,12 +166,12 @@ Hello World*/
 
                     .texto {
                         font-family: $fuenteSec;
-                        font-size: 16px;
+                        font-size: 1em;
                         color: $typo;
                         letter-spacing: 0;
-                        line-height: 24px;
+                        line-height: 1.5em;
                         text-align: left;
-                        min-width: 464px;
+                        min-width: 29rem;
                         margin: 0;
                     }
                 }
@@ -192,7 +191,7 @@ Hello World*/
         .invitados {
             box-sizing: border-box;
             position: relative;
-            margin-top: 64px;
+            margin-top: 4rem;
 
             div {
                 display: flex;
@@ -247,8 +246,8 @@ Hello World*/
                 flex-direction: row;
 
                 .contenedor-img {
-                    width: 260px;
-                    height: 130px;
+                    width: 16.25rem;
+                    height: 8.1rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -262,7 +261,7 @@ Hello World*/
 
                     p {
                         font-family: $fuentePpal;
-                        font-size: 24px;
+                        font-size: 1.5em;
                         color: #060A24;
                         letter-spacing: 0;
                         text-align: center;
@@ -280,8 +279,8 @@ Hello World*/
             box-sizing: border-box;
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
             position: relative;
-            height: 518px;
-            margin-top: 50px;
+            height: 32.3rem;
+            margin-top: 3.12rem;
 
             .main {
                 background-color: rgba(66, 70, 99, 0);
@@ -293,7 +292,7 @@ Hello World*/
 
                 h2 {
                     margin: 0px;
-                    max-width: 692px;
+                    max-width: 43.25rem;
                     padding: 0px;
                     @include titulacionWeb;
                 }
@@ -311,7 +310,7 @@ Hello World*/
 
         footer {
             position: relative;
-            height: 95px;
+            height: 6rem;
 
             .main {
                 width: 100vw;
@@ -322,7 +321,7 @@ Hello World*/
 
                 .texto {
                     font-family: $fuenteSec;
-                    font-size: 16px;
+                    font-size: 1em;
                     color: $typo;
                     margin: 0;
                 }

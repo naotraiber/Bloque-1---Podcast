@@ -16,34 +16,35 @@
     /*Logo + navbar*/
 
     header {
+        width: 100%;
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 44px;
+            height: 2.75rem;
 
                     .logo {
                         position: relative;
-                        width: 24px;
-                        height: 24px;
-                        margin-left: 16px;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin-left: 1rem;
                     }
 
                     ul{
-                        top: 44px;
+                        top: 2.75rem;
                         background-color: $azul-menu;
                         display: flex;
                         flex-direction: column;
-                        width: 320px;
-                        height: 224px;
+                        width: 20rem;
+                        height: 14rem;
                         z-index: 1;
                         right: 0;
                         position: absolute;
 
                         li{
-                            margin-top: 27px;
-                            margin-left: 15px;
+                            margin-top: 1.8rem;
+                            margin-left: 1rem;
                             font-family: $fuentePpal;
                             font-size: 16px;
                             list-style: none;
@@ -63,7 +64,7 @@
 
                     .menu-nav {
 
-                        margin-right: 20px;
+                        margin-right: 1.25rem;
 
                         input{
                             display: none;
@@ -148,9 +149,9 @@
         width: 100vw;
         box-sizing: border-box;
         position: relative;
-        margin-top: 24px;
+        margin-top: 1.5rem;
         background-image: $gradiente;
-        height: 1290.5px;
+        height: 80.6rem;
         clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
 
         .elements {
@@ -161,14 +162,14 @@
 
             h2 {
                 width: 100vw;
-                margin: 4rem 0px 20px 16px;
+                margin: 4rem 0px 1.25rem 4rem;
                 position: relative;
                 color: white;
                 @include titulacionMobile;
             }
 
             .spotify {
-                max-width: 298px;
+                max-width: 18.6rem;
                 margin: 11px 11px 11px 11px;
                 position: relative;
                 display: grid;
@@ -208,26 +209,26 @@
             align-items: center;
 
             .img {
-                width: 360px;
-                margin-bottom: 27px;
+                width: 22.5rem;
+                margin-bottom: 1.6rem;
             }
 
             h2 {
                 @include titulacionMobile;
                 color: $typo;
                 margin: 0px 0px 8px 16px;
-                max-width: 288px;
+                max-width: 18rem;
             }
 
             .texto {
 
                 font-family: $fuenteSec;
-                font-size: 14px;
-                line-height: 22px;
+                font-size: 0.8em;
+                line-height: 1.3em;
                 text-align: justify;
                 color: $typo;
                 margin: 8px 16px 0px 16px;
-                max-width: 288px;
+                max-width: 18rem;
 
             }
         }
@@ -248,7 +249,7 @@
                 margin: 54px 0px 16px 16px;
                 @include titulacionMobile;
                 color: $typo;
-                width: 288px;
+                width: 18rem;
             }
 
             .imagenes {
@@ -302,8 +303,8 @@
                 p {
                     font-family: $fuentePpal;
                     color: $typo;
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 1.4em;
+                    line-height: 2em;
                     text-align: center;
                     font-weight: 500;
                 }
@@ -320,7 +321,7 @@
         box-sizing: border-box;
         background-image: $gradiente;
         position: relative;
-        height: 350px;
+        height: 21.87rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -332,13 +333,13 @@
             clip-path: none;
 
             h2 {
-                max-width: 288px;
+                max-width: 18rem;
                 font-family: $fuentePpal;
                 font-weight: 300;
                 color: white;
-                font-size: 36px;
+                font-size: 2.25em;
                 text-align: center;
-                padding-top: 50px;
+                padding-top: 3.1rem;
             }
 
             .boton {
@@ -358,13 +359,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 121px;
+        height: 7.5rem;
 
 
         .texto {
             font-family: $fuenteSec;
             color: $typo;
-            margin-top: 24px;
+            margin-top: 1.4rem;
         }
 
         .iconosRedes {
