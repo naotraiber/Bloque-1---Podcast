@@ -100,8 +100,16 @@ $fuenteSec: 'IBM Plex Mono';
 
 
 
-@mixin titulacion {
+@mixin titulacionMobile {
+    font-family: $fuentePpal;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+@mixin titulacionWeb {
     font-family: $fuentePpal;
     font-size: 48px;
     line-height: 62px;
+    font-weight: 300;
 }

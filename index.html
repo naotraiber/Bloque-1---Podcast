@@ -24,45 +24,36 @@
     <!--Bloque 1-->
     <!--elementos del navbar-->
 
-
-    <nav>
-        <div class="barra">
-
-            <div class="navegacion">
-
-                <a href="./index.html" class="barra logo"><img src="./assets/logo.svg" alt="logo bd"></a>
-
-                <div class="menu">
-
-                    <input type="checkbox" id="menu" class="check">
-                    <label for="menu" class="abierto"><i class="fa fa-bars" aria-hidden="true"></i></label>
-                    <label for="cruz" class="cerrado"><i class="fa fa-times" aria-hidden="true"></i></label>
-
-                    <ul class="links">
-                        <li class="navegacion elemento">EPISODIOS</li>
-                        <li class="navegacion elemento">NOSOTROS</li>
-                        <li class="navegacion elemento">ENTREVISTAS</li>
-                        <li class="navegacion elemento">TÓPICOS</li>
-
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </nav>
-
-
-
-
-    <!--Bloque 2-->
-    <!--Hello world-->
-
     <header>
 
+        <nav>
+                    <a href="./index.html" class="logo"><img src="./assets/logo.svg" alt="logo bd"></a>
+
+                    <div class="menu-nav">
+
+                        <input type="checkbox" id="menu">
+                        <label for="menu" class="abierto"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                        <label for="menu" class="cerrado"><i class="fa fa-times" aria-hidden="true"></i></label>
+
+                        <ul>
+                            <li><a href="#play">EPISODIOS</a></li>
+                            <li><a href="#deDone">NOSOTROS</a></li>
+                            <li><a href="#invitados">ENTREVISTAS</a></li>
+                            <li><a href="#temas">TÓPICOS</a></li>
+                        </ul>
+
+                    </div>
+        </nav>
+
+
+        <!--Hello World-->
+        <!--Bloque 2-->
+
         <div class="helloWorld">
-            <h1 class="titulacion">Hello <span class="tachado">world</span> pale blue dot <span
+            <h1>Hello <span class="tachado">world</span> pale blue dot <span
                     class="puntoColor">.</span></h1>
-            <p class="textoMain">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="textoMain">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+                episodios, todos los jueves cada 15 días.</p>
 
             <button class="boton">CONOCÉ MÁS</button>
         </div>
@@ -75,28 +66,25 @@
 
     <main>
 
-        <section class="play">
+        <section id="play" class="play">
 
             <div class="elements">
 
-                <h1 class="titulacion">Episodios</h1>
+                <h2>Episodios</h2>
                 <div class="spotify">
-                    <div class="one">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%"
-                            height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div class="two">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/2ycBsyDy7Qmh5tGHE7ITG1" width="100%"
-                            height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div class="three">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3VSleFGIAZ9l1WthtaZ1Up" width="100%"
-                            height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div class="four">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/4dGG0ujxZoet3HCVKgsDM7" width="100%"
-                            height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
+
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                            height="232" allow="encrypted-media"></iframe>
+
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/2ycBsyDy7Qmh5tGHE7ITG1" 
+                            height="232" allow="encrypted-media"></iframe>
+
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/3VSleFGIAZ9l1WthtaZ1Up"
+                            height="232" allow="encrypted-media"></iframe>
+
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/4dGG0ujxZoet3HCVKgsDM7"
+                            height="232" allow="encrypted-media"></iframe>
+
                 </div>
             </div>
 
@@ -109,12 +97,12 @@
 
 
 
-        <section class="deDonde">
+        <section id="deDonde" class="deDonde">
             <div class="contenedor">
                 <img class="img" src="./assets/phone.png" alt="imagen iPhone">
 
                 <div class="contenedor-textos">
-                    <h2 class="titulacion">De dónde venimos</h2>
+                    <h2>De dónde venimos</h2>
                     <p class="texto">Our posturings, our imagined self-importance, the delusion that we have some
                         priviliged
                         position in the universe, are challenged by this point of pale light.
@@ -134,15 +122,15 @@
 
 
 
-        <section class="invitados">
+        <section id="invitados" class="invitados">
             <div>
-                <h1 class="titulacion">Invitadas/os estelares</h1>
+                <h2>Invitadas/os estelares</h2>
                 <div class="imagenes">
                     <img src="./assets/grace-hopper.png" alt="grace-hopper">
                     <img src="./assets/Katie-Bouman.png" alt="Katie-Bouman">
                     <img src="./assets/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-                    <img src="./assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Univac">
-                    <img src="./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                    <img src="./assets/Univac.png" alt="Univac">
+                    <img src="./assets/computer-operator.png"
                         alt="Computer">
                     <img src="./assets/susan-kare.png" alt="susan-kare">
                 </div>
@@ -155,8 +143,8 @@
 
 
 
-        <section class="temas">
-            <h1 class="titulacion">Algunos de nuestros temas</h1>
+        <section id="temas" class="temas">
+            <h2>Algunos de nuestros temas</h2>
             <div class="contenedorIconos">
 
                 <div class="contenedor-img">
@@ -197,7 +185,7 @@
         <section class="novedades">
 
             <div class="main">
-                <h1 class="titulacion"> ¿Querés las últimas novedades?</h1>
+                <h2> ¿Querés las últimas novedades?</h2>
                 <button class="boton">ESCUCHÁ LOS EPISODIOS</button>
             </div>
 
@@ -230,3 +218,5 @@
 </body>
 
 </html>
+
+
