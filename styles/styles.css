@@ -410,9 +410,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 16px;
-    margin-bottom: 31px; }
-    footer .iconosRedes a img {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    footer .iconosRedes a i {
+      color: black;
       height: 16px;
       width: 16px; }
 
@@ -424,46 +425,8 @@ footer {
 /*Logo + navbar*/
 @media screen and (min-width: 768px) {
   header {
-   /*         
-            ul{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                width: 100vw;
-                height: 80px;
-                margin-right: 5vw;
-
-                li{
-                    a{
-                        color: $typo;
-                    }
-                }
-
-            }
-
-
-
-
-
-
-
-
-            .logo{
-                width: 2.25rem;
-                height: 2.25rem;
-                margin-left: 6.25rem;
-            }
-
-            .menu-box{
-                display: none;
-            }
-        
-
-        }
-
-/*Bloque 2
-Hello World*/ }
+    /*Bloque 2
+    Hello World*/ }
     header nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -827,7 +790,8 @@ Hello World*/ }
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        footer .main .iconosRedes img {
+        footer .main .iconosRedes a i {
+          color: black;
           width: 20px;
           height: 20px;
           padding-left: 36px; } }

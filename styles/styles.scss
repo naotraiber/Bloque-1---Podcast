@@ -57,7 +57,6 @@
                                     text-decoration: line-through;
                                 }
                             }
-
                         }
                     }
 
@@ -88,7 +87,6 @@
                         input:checked ~ ul{
                             display: block;
                         }
-
                     }
         }
 
@@ -135,9 +133,7 @@
             .boton {
                 @include boton;
             }
-
         }
-    
     }
 
     /*Bloque 3*/
@@ -228,7 +224,6 @@
                 color: $typo;
                 margin: 1em 1em 0px 1em;
                 max-width: 18rem;
-
             }
         }
     }
@@ -309,10 +304,8 @@
                     font-weight: 500;
                 }
             }
-
         }
     }
-
 
     /*Bloque 7*/
     /*Novedades + boton*/
@@ -327,7 +320,6 @@
         justify-content: center;
         align-items: center;
         clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
-
 
         .main {
             clip-path: none;
@@ -346,8 +338,6 @@
                 @include boton;
             }
         }
-
-
     }
 
     /*Bloque 8*/
@@ -373,21 +363,18 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin-top: 16px;
-            margin-bottom: 31px;
+            margin-top: 20px;
+            margin-bottom: 30px;
 
-            a {
-                img {
+            a{
+                i {
+                    color: black;
                     height: 16px;
                     width: 16px;
                 }
             }
         }
     }
-
-
-
-
 
     @import 'media';
     @import 'media2';

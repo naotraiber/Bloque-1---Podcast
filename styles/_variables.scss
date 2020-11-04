@@ -13,7 +13,6 @@ En _variables.scss:
 
 /*________________________________________________________________*/
 
-
 /*Croma*/
 $verde: #00F3BB;
 $azul: #0000A3;
@@ -21,8 +20,6 @@ $azul-menu: #0000EC;
 $gradiente: linear-gradient(#0000FF, #0000A3);
 $gradienteBotones: linear-gradient(to left,#00F0B8,#0000FE);
 $typo: #060A24;
-
-
 
 /*TIPOGRAFIA
 font-family: 'IBM Plex Sans', sans-serif;
@@ -46,7 +43,6 @@ $fuenteSec: 'IBM Plex Mono';
         }
     }
 }
-
 
 /*Botones - propiedades*/
 
@@ -96,9 +92,6 @@ $fuenteSec: 'IBM Plex Mono';
         color: white;
     }
 }
-
-
-
 
 @mixin titulacionMobile {
     font-family: $fuentePpal;
